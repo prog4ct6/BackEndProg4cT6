@@ -26,7 +26,7 @@ class TipoCajonController {
         this.obtenerTipoCajons = (req, res) => {
             tipocajon_model_1.default.find()
                 .then(TipoCajons => {
-                res.statu(200).json({
+                res.status(200).json({
                     ok: true,
                     TipoCajons: TipoCajons
                 });
